@@ -1,0 +1,32 @@
+{
+  "name": "electron-ffmpeg",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "main": "app/index.cjs",
+  "scripts": {
+    "dev": "concurrently -i --default-input-target 1 -k \"vite --port 3000\" \"npm run electron:dev\"",
+    "build": "vite build",
+    "preview": "vite preview",
+    "electron:dev": "cross-env IS_DEV=true electron-forge start",
+    "electron:build": "electron-forge make",
+    "electron:package": "electron-forge package"
+  },
+  "dependencies": {
+    "ffmpeg-static": "^5.0.2",
+    "fluent-ffmpeg": "^2.1.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@electron-forge/cli": "^6.0.0-beta.64",
+    "@types/fluent-ffmpeg": "^2.1.20",
+    "@types/react": "^18.0.15",
+    "@types/react-dom": "^18.0.6",
+    "@vitejs/plugin-react": "^2.0.0",
+    "concurrently": "^7.2.2",
+    "cross-env": "^7.0.3",
+    "electron": "^19.0.8",
+    "vite": "^3.0.0"
+  }
+}
