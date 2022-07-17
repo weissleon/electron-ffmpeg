@@ -12,7 +12,10 @@ dist
 dist-ssr
 *.local
 
+# rendering process
 out
+export
+render
 
 # Editor directories and files
 .vscode/*
