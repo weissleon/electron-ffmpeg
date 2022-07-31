@@ -1,0 +1,10 @@
+{
+  "paddingW": 160,
+  "paddingH": 80,
+  "bottomSubP": 80,
+  "isStoveL10N": true,
+  "flagDuration": 10,
+  "isFlagDurationInfinite": true,
+  "fontFamily": "Pretendard",
+  "fontSize": 60
+}
